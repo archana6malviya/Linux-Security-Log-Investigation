@@ -73,6 +73,7 @@ You will see:
                 sudo grep "Failed password" /var/log/auth.log
 
 ✅ You WILL see output now-
+
                 Failed password for invalid user wronguser from ::1 port 22 ssh2
 
 
@@ -148,7 +149,7 @@ Expected:
 
               sudo grep "authentication failure" /var/log/auth.log
 
-📜 PART 3: Using journalctl
+# 📜 PART 3: Using journalctl
 
 ## 🔹 Step 9: SSH Logs via journalctl
 
