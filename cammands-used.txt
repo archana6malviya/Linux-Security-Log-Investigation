@@ -1,0 +1,23 @@
+1. sudo systemctl status ssh
+   - Checked whether the SSH service is running.
+
+2. sudo systemctl start ssh
+   - Started the SSH service to enable SSH login attempts.
+
+3. ssh wronguser@localhost
+   - Simulated a failed SSH login attempt for testing.
+
+4. sudo journalctl -u ssh -o cat
+   - Viewed raw SSH authentication logs.
+
+5. sudo journalctl -u ssh -o cat | grep "Failed password"
+   - Filtered failed SSH login attempts from logs.
+
+6. sudo journalctl -u ssh -o cat | grep "Failed password" | sed -n 's/.*from \([^ ]*\).*/\1/p'
+   - Extracted source IP address from failed SSH logs.
+
+7. sudo journalctl -u ssh -o cat | grep "Failed password" | sed -n 's/.*user \([^ ]*\).*/\1/p'
+   - Extracted targeted username from failed SSH logs.
+
+8. sudo grep "sudo" /var/log/auth.log
+   - Reviewed sudo activity to identify privilege escalation attempts.
