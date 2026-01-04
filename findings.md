@@ -8,10 +8,10 @@ Targeting common usernames (root, admin)
 
 ✔ Attacker Details
 
-IP Address: X.X.X.X
+IP Address: 127.0.0.X
 
 Targeted User: root / test / admin
 
 Attack Type: Brute-force SSH
 
-Time: YYYY-MM-DD HH:MM
+Time: 2026-01-03 16:14
