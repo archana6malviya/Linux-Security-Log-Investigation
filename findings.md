@@ -1,17 +1,27 @@
-✔ Indicators of Attack
+# ✔ Indicators of Attack
 
-Multiple failed SSH login attempts
+- Multiple failed SSH login attempts
 
-Repeated attempts from same IP
+- Repeated attempts from same IP
 
-Targeting common usernames (root, admin)
+- Targeting common usernames (root, admin)
 
-✔ Attacker Details
+# Finding:
 
-IP Address: 127.0.0.X
+- Failed SSH login detected
 
-Targeted User: root / test / admin
+- Username targeted: username
 
-Attack Type: Brute-force SSH
+- Source IP: 127.0.0.x
 
-Time: 2026-01-03 16:14
+- Attack simulated for security testing
+
+# ✔ Attacker Details
+
+- IP Address: 127.0.0.X
+
+- Targeted User: root / test / admin
+
+- Attack Type: Brute-force SSH
+
+- Time: 2026-01-03 16:14
